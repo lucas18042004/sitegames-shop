@@ -1,0 +1,160 @@
+* {
+    margin: 0;          /*removendo configurações padrao */
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header ,
+section h2,
+section h3,
+form button {
+    font-family: 'Bungee' , cursive;
+    font-weight: normal;      /* arrumando o erro da fonte que aconteceu no titulo principal devido a um codigo padrao do navegador ela ficou com a aparencia mais cheia */
+}
+
+body, input, textarea{
+    font-family: 'Roboto' , sans-serif;
+}
+
+header{
+    padding: 16px 0;
+    background-color: #0A76BE;
+    color: #F40902;
+}
+
+
+
+
+header nav li{
+    display: inline;
+    margin-left: 16px ;    
+  /*  color: aliceblue;    Não vai funcionar por que somente o li nao chamara o link tem que por o a */
+    font-size: 18px;       /* tamanho da fonte do link*/
+}
+
+header nav li a {
+    color: aliceblue;
+    text-decoration: none;   /* para remover a linha do link */
+}
+
+.container{
+    max-width: 1280px ;         /* container serve para centralizar o texto e organizar os tamanhos e posições| */
+    width: 100%;                /* max width significa a largura maxima e width significa que vai ocupar 100% da largura */
+    margin: 0 auto;             /* margin serve para centralizar o valor 1 é o topo e o baixo o valor 2 sao as laterais */
+
+}
+
+header .container ,
+section .container{            /*o section container adicionado serviu para reaprofeitar a regra */
+    display: flex;
+    align-items: center;     /* serve para centralizar na vertical */ 
+    justify-content: space-between;   /* serve para distribuir meu conteudo neste caso separando os links da logo para extrema direita*/
+
+}
+/* arrumando logos nintendo xbox e playstation */
+.brand-list img{
+    height: 24px;        /* diminhuir tamnho */
+}
+
+.brand-list li{
+    display:inline;             /* por yma do lado da outra*/
+    margin-right: 8px;
+}
+
+section .container{
+    align-items: flex-start;       /* para arrumar a posição do texto "sobre a loja" */
+}
+
+section {
+    padding: 24px 0;       /* separando imagem do cabeçalho */    
+}
+
+section h2 {
+    margin-bottom: 16px;          /* separando "sobre" do cabeçalho */
+    
+}
+
+section {
+    color: #314CB7;
+}
+
+section p {
+    margin-bottom: 8px;        /* separamdo paragrafo lorem */
+}
+
+.store-front {
+    margin-right: 32px;      /* espaço entre a img e o texto */
+}
+
+.social-links img{
+    height: 24px;
+}
+
+.social-links li{
+    display: inline;
+    margin-right: 8px;
+}
+
+.social-links li a{
+    text-decoration: none;
+}
+
+#contact .container{
+    display: block;
+}
+
+.contact-methods{
+    display: flex;
+    justify-content: space-between;
+}
+
+form input,
+form textarea,
+form button{
+display: block;
+width: 320px;
+margin-bottom: 8px;
+padding: 8px;
+}
+
+form textarea{
+    resize: none;         /* desativando a "tamanho livre" do espaço para usuario digitar texto */
+    height: 180px;
+}
+
+section h3 {
+    margin-bottom: 16px;
+}
+
+form button {
+    background-color: #B68DB9;
+    color: #314CB7;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover{
+    background-color: #DBACD6;
+}
+
+
+
+    footer {
+        background-color: #0A76BE;
+        color: #fff;
+        padding: 16px 0;
+    }
+
+    form input, form textarea{
+
+        outline: none;
+    
+    }
+    
+    form input:focus, form textarea:focus{
+    
+        box-shadow: 0 0 0 2px #314CB7;
+    
+        border-color: #314CB7; /* opcional */
+    
+    }
